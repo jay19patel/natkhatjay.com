@@ -4,31 +4,63 @@ import { Camera,Instagram, Youtube } from "lucide-react";
 import { ImageCarousel } from "./image-carousel"
 import { Footer } from "./footer"
 import { Badge } from "@/components/ui/badge"
-import { CalendarIcon, GraduationCapIcon, CodeIcon, CameraIcon, MusicIcon ,Navigation} from "lucide-react"
+import { CalendarIcon, GraduationCapIcon, CodeIcon, CameraIcon, MusicIcon ,Navigation,Website} from "lucide-react"
 import { ServiceCard } from "@/components/service-card"
 
 export default function ProfilePage() {
   const services = [
     {
       icon: Instagram,
-      title: "LET ME CREATE",
-      subtitle: "UGC videos for your Brand",
-      description: "Professional UGC content creation services for brands looking to enhance their social presence.",
-      count: "100+",
-      banner: "/i-2.jpg?height=200&width=400",
-      link: "#",
+      title: "Instagram - @_natkhat_jay",
+      subtitle: "UGC Content Creation for Your Brand",
+      description:
+        "Elevate your brand with professional UGC (User-Generated Content) videos. Connect with me on Instagram to boost your social media presence.",
+      count: "1500+ Projects Delivered",
+      banner: "/natkhat-jay-ig.png",
+      link: "https://www.instagram.com/_natkhat_jay/",
     },
     {
       icon: Youtube,
-      title: "MY LATEST VLOG",
-      subtitle: "My youtube channel",
-      description: "Watch my latest content about digital marketing, tech, and business growth strategies.",
-      count: "1.2M",
-      banner: "/i-2.jpg?height=200&width=400",
-      link: "https://youtube.com/@yourusername",
+      title: "Natkhat Jay - YouTube",
+      subtitle: "Entertainment and Lifestyle Vlogs",
+      description:
+        "Join me on my YouTube channel, Natkhat Jay, where I share fun, entertaining, and lifestyle vlogs that bring joy and laughter.",
+      count: "50+ Videos Published",
+      banner: "/natkhat-jay.png",
+      link: "https://www.youtube.com/@natkhat19jay", // Update to your actual username
     },
-    // ... add more services as needed
-  ]
+    {
+      icon: Youtube,
+      title: "NJ as Coder - ગુજરાતી",
+      subtitle: "Tech Tutorials in Gujarati",
+      description:
+        "Explore programming, technology, and coding tips in Gujarati. Watch NJ as Coder for easy-to-follow tutorials and guides.",
+      count: "50+ Tech Videos",
+      banner: "/nj-as-coder.png",
+      link: "https://www.youtube.com/@NJasCoder", // Update to your actual username
+    },
+    {
+      icon: Youtube, // Replace with an appropriate icon
+      title: "Trade Buddy - Paper Broker",
+      subtitle: "Simplified Brokerage Solutions",
+      description:
+        "Discover a seamless experience for paper trading, brokerage services, and market analysis with Trade Buddy's BPaper Broker.",
+      count: "10+ Satisfied Clients",
+      banner: "/paper-broker.jpeg", // Replace with an actual banner image path
+      link: "https://trade-buddy-broker.vercel.app/login", // Update with the correct URL
+    },
+    {
+      icon: Youtube, // Replace with an appropriate icon
+      title: "Trade Buddy Algo",
+      subtitle: "Automated Trading Solutions",
+      description:
+        "Enhance your trading performance with Trade Buddy Algo, offering advanced algorithmic trading tools and strategies.",
+      count: "2+ Successful Trades",
+      banner: "/Algo.jpeg", // Replace with an actual banner image path
+      link: "https://algo.natkhatjay.com", // Update with the correct URL
+    },
+  ];
+  
 
   return (
     (<div className="min-h-screen bg-gray-950 bg-opacity-90 text-white">
@@ -70,10 +102,10 @@ export default function ProfilePage() {
         </p>
         <div className="flex justify-center space-x-8 text-lg font-bold">
           <div>
-            <span className="text-yellow-400">1.2M</span> YouTube
+            YouTube
           </div>
           <div>
-            <span className="text-pink-400">500K</span> Instagram
+            Instagram
           </div>
         </div>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 text-zinc-400 mb-4">

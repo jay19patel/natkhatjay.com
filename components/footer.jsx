@@ -12,13 +12,13 @@ export function Footer() {
     {
       icon: Youtube,
       label: "YouTube Channel",
-      href: "https://youtube.com/@yourusername",
+      href: "https://www.youtube.com/@natkhat19jay",
       color: "hover:text-blue-500",
     },
     {
       icon: Instagram,
       label: "Instagram Profile",
-      href: "https://instagram.com/yourusername",
+      href: "https://www.instagram.com/_natkhat_jay/",
       color: "hover:text-blue-500",
     },
   ]

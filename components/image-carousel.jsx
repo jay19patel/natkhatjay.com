@@ -1,32 +1,54 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useEffect, useState } from "react"
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export function ImageCarousel() {
-  const [width, setWidth] = useState(0)
+  const [images, setImages] = useState([]);
+  const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    setWidth(window.innerWidth)
-  }, [])
+    // Set the screen width for animations
+    setWidth(window.innerWidth);
 
-  // Sample images - replace with your actual images
-  const images = Array(10).fill("/i-1.jpg?height=200&width=200")
+    // Fetch images dynamically from the API
+    async function fetchImages() {
+      try {
+        const response = await fetch("/Images/images.json");
+        const data = await response.json();
+        setImages(data.sort(() => Math.random() - 0.5));
+      } catch (error) {
+        console.error("Failed to fetch images:", error);
+      }
+    }
+
+    fetchImages();
+  }, []);
 
   return (
-    (<div className="overflow-hidden space-y-8">
+    <div className="overflow-hidden space-y-8">
       {/* First row - left to right */}
       <motion.div
         initial={{ x: 0 }}
         animate={{ x: [-width, 0] }}
-        transition={{ repeat: Number.POSITIVE_INFINITY, duration: 20, ease: "linear" }}
-        className="flex gap-4">
+        transition={{
+          repeat: Number.POSITIVE_INFINITY,
+          duration: 50,
+          ease: "linear",
+        }}
+        className="flex gap-4"
+      >
         {images.map((src, index) => (
-          <motion.div key={index} whileHover={{ scale: 1.05 }} className="shrink-0">
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.05 }}
+            className="shrink-0"
+          >
             <img
-              src={src || "/profile-pic.png"}
+              src={src}
               alt={`Carousel image ${index + 1}`}
-              className="w-48 h-48 rounded-lg object-cover" />
+              className="w-48 h-48 rounded-lg object-cover"
+            />
           </motion.div>
         ))}
       </motion.div>
@@ -34,18 +56,27 @@ export function ImageCarousel() {
       <motion.div
         initial={{ x: 0 }}
         animate={{ x: [0, -width] }}
-        transition={{ repeat: Number.POSITIVE_INFINITY, duration: 20, ease: "linear" }}
-        className="flex gap-4">
+        transition={{
+          repeat: Number.POSITIVE_INFINITY,
+          duration: 50,
+          ease: "linear",
+        }}
+        className="flex gap-4"
+      >
         {images.map((src, index) => (
-          <motion.div key={index} whileHover={{ scale: 1.05 }} className="shrink-0">
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.05 }}
+            className="shrink-0"
+          >
             <img
-              src={src || "/placeholder.svg"}
+              src={src}
               alt={`Carousel image ${index + 11}`}
-              className="w-48 h-48 rounded-lg object-cover" />
+              className="w-48 h-48 rounded-lg object-cover"
+            />
           </motion.div>
         ))}
       </motion.div>
-    </div>)
+    </div>
   );
 }
-

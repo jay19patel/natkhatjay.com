@@ -31,7 +31,7 @@ export function ServiceCard({
                 src={banner || "/placeholder.svg"}
                 alt={title}
                 className="w-full h-full object-cover"
-                initial={{ opacity: 0.6 }}
+                initial={{ opacity: 0.9 }}
                 whileHover={{ opacity: 1 }}
                 transition={{ duration: 0.3 }}
               />
@@ -52,7 +52,7 @@ export function ServiceCard({
                   <span className="text-2xl font-bold text-yellow-500">
                     {count}
                   </span>
-                  <p className="text-sm text-zinc-400">Sessions</p>
+                  <p className="text-sm text-zinc-400">-</p>
                 </div>
               )}
             </div>
