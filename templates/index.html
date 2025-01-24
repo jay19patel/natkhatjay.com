@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="home-page" class="font-sans">
+    <section id="home" class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-10 ">
+        <a href="" class="border border-white rounded-lg py-2 px-4 text-white text-sm mb-5 transition duration-300 ease-in-out hover:bg-white hover:text-purple-500">
+            "Coding, comedy, and education – all in one!"
+        </a>
+        <h1 class="mx-auto max-w-4xl font-display text-5xl font-extrabold tracking-normal text-white sm:text-7xl">
+            Creating Content
+            <span class="relative whitespace-nowrap text-yellow-300">
+                <svg aria-hidden="true" viewBox="0 0 418 42" class="absolute top-2/3 left-0 h-[0.58em] w-full fill-yellow-300/70" preserveAspectRatio="none">
+                    <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.780 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.540-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.810 23.239-7.825 27.934-10.149 28.304-14.005 .417-4.348-3.529-6-16.878-7.066Z"></path>
+                </svg>
+                <span class="relative">With</span>
+            </span>
+            <span class="relative whitespace-nowrap text-white hover:text-yellow-300 transition-colors">
+                Jay Patel
+            </span>
+        </h1>
+        <h2 class="mx-auto mt-12 max-w-xl text-lg text-gray-200 leading-7">
+            I'm Jay Patel, a software developer and educator with a love for travel, gaming, and content creation. I enjoy bringing my ideas to life through coding, turning creativity into reality, and sharing it with the world.
+        </h2>
+        <a class="scroll-link bg-white text-purple-600 font-bold rounded-xl px-6 py-3 sm:mt-10 mt-8 hover:bg-yellow-300 hover:text-purple-700 transition-colors" href="#about">About Me</a>
+    </section>
+
+    <section id="about" class="py-10 bg-gray-100 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center text-purple-600">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="{{ url_for('static', filename='images/software-developer.jpg') }}" alt="Jay Patel" class="rounded-lg shadow-lg max-w-full h-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                        I'm a passionate Software Developer and Content Creator based in Valsad, Gujarat, India. I completed my Computer Engineering from Government Engineering College, Rajkot.
+                    </p>
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                        My journey in technology started early, leading me to pursue a career in computer engineering. Currently, I'm working on exciting projects while also dedicating time to personal growth, travel, and living life to the fullest.
+                    </p>
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                        I create content on my YouTube channels: <a href="#" class="text-blue-600 hover:underline">Natkhat Jay</a> for funny and comedic videos, and <a href="#" class="text-blue-600 hover:underline">NJ as Coder</a> for tech-related content.
+                    </p>
+                    <div class="mt-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-purple-600">Interests</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Programming</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">Gaming</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Traveling</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Content Creation</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="/static/resume.pdf" download class="inline-block bg-purple-600 text-white font-bold rounded-lg px-6 py-3 hover:bg-purple-700 transition-colors">
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-10 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center text-purple-200">Skills & Technologies</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                {% set skills = [
+                    {"name": "Python", "type": "Language", "color": "green"},
+                    {"name": "JavaScript", "type": "Language", "color": "green"},
+                
+                    {"name": "FastAPI", "type": "Framework", "color": "yellow"},
+                    {"name": "Next.js", "type": "Framework", "color": "yellow"},
+                    {"name": "Frappe", "type": "Framework", "color": "yellow"},
+                
+                    {"name": "MongoDB", "type": "Database", "color": "blue"},
+                    {"name": "PostgreSQL", "type": "Database", "color": "blue"},
+                    {"name": "MsSQL", "type": "Database", "color": "blue"},
+                
+                    {"name": "Docker", "type": "Tool", "color": "purple"},
+                    {"name": "Nginx", "type": "Server", "color": "purple"},
+                    {"name": "CloudFlare", "type": "Service", "color": "purple"}
+                ] %}                
+                {% for skill in skills %}
+                    <div class="bg-gray-100 rounded-lg shadow-md p-4 text-center hover:bg-{{ skill.color }}-100 transition-colors">
+                        <span class="text-lg font-semibold text-{{ skill.color }}-600">{{ skill.name }}</span>
+                        <span class="block text-xs text-gray-500 mt-1">{{ skill.type }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-10 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center text-purple-200">Projects & Achievements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/static/images/project1.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-code text-blue-500 mr-2"></i>
+                            <h3 class="text-xl font-semibold text-gray-800">E-commerce Platform</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Developed a full-stack e-commerce platform using Next.js, Node.js, and MongoDB.</p>
+                        <a href="#" class="text-blue-600 hover:underline font-medium">View Project</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/static/images/project2.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-robot text-green-500 mr-2"></i>
+                            <h3 class="text-xl font-semibold text-gray-800">AI Chatbot</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Created an AI-powered chatbot using Python and natural language processing techniques.</p>
+                        <a href="#" class="text-blue-600 hover:underline font-medium">Learn More</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('/static/images/project3.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fab fa-youtube text-red-500 mr-2"></i>
+                            <h3 class="text-xl font-semibold text-gray-800">YouTube Growth</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Grew my YouTube channels to over 10,000 subscribers combined.</p>
+                        <a href="#" class="text-blue-600 hover:underline font-medium">View Channels</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="py-10 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center text-purple-200">My Impact</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                {% set stats = [
+                    {"title": "Live Projects", "value": 3, "change": 1, "icon": "fas fa-project-diagram"},
+                    {"title": "YouTube - NJ as Coder", "value": 5000, "change": 10, "icon": "fab fa-youtube"},
+                    {"title": "YouTube - Natkhat Jay", "value": 5500, "change": 15, "icon": "fab fa-youtube"},
+                    {"title": "LinkedIn Connections", "value": 3543, "change": 7, "icon": "fab fa-linkedin-in"},
+                    {"title": "GitHub Repositories", "value": 78, "change": 5, "icon": "fab fa-github"}
+                ] %}
+                {% for stat in stats %}
+                    <div class="bg-gray-100 rounded-lg shadow-md p-4 hover:bg-purple-100 transition-colors">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-600">{{ stat.title }}</span>
+                            <i class="{{ stat.icon }} text-purple-500"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-gray-800">{{ stat.value }}</div>
+                        <div class="text-sm {% if stat.change > 0 %}text-green-500{% else %}text-red-500{% endif %}">
+                            {% if stat.change > 0 %}+{% endif %}{{ stat.change }}%
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-10 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center text-purple-200">Get in Touch</h2>
+            <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-8">
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" name="name" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700<cut_off_point>
+div>
+                        <label for="email" class="block text-sm font-medium text-gray-700
+</cut_off_point>
+
+">Email</label>
+                        <input type="email" name="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea name="message" id="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-colors">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
