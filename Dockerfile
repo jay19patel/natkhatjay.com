@@ -12,7 +12,7 @@ RUN pip install flask gunicorn
 COPY . .
 
 # Expose the port on which the app will run
-EXPOSE 8002
+EXPOSE 8001
 
 # Command to run the Flask app with Gunicorn
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8002", "app:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8001", "app:app"]

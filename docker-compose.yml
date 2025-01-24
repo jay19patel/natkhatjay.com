@@ -8,13 +8,13 @@ services:
     volumes:
       - .:/app
     expose:
-      - "8002"
+      - "8001"
 
   nginx:
     image: nginx:latest
     container_name: nginx_server
     ports:
-      - "80:80"
+      - "8001:8001"
     networks:
       - app_network
     volumes:
