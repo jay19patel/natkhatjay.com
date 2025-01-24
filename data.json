@@ -29,18 +29,43 @@
       "color": "green"
     },
     {
+      "name": "C#",
+      "type": "Language",
+      "color": "green"
+    },
+    {
       "name": "FastAPI",
-      "type": "Framework",
+      "type": "Framework & Library & Library",
       "color": "yellow"
     },
     {
       "name": "Next.js",
-      "type": "Framework",
+      "type": "Framework & Library",
       "color": "yellow"
     },
     {
       "name": "Frappe",
-      "type": "Framework",
+      "type": "Framework & Library",
+      "color": "yellow"
+    },
+    {
+      "name": "Pandas",
+      "type": "Framework & Library",
+      "color": "yellow"
+    },
+    {
+      "name": "Numpy",
+      "type": "Framework & Library",
+      "color": "yellow"
+    },
+    {
+      "name": "Scikit-Learn",
+      "type": "Framework & Library",
+      "color": "yellow"
+    },
+    {
+      "name": "Pillow/CV2",
+      "type": "Framework & Library",
       "color": "yellow"
     },
     {
@@ -72,276 +97,247 @@
       "name": "CloudFlare",
       "type": "Service",
       "color": "purple"
+    },
+    {
+      "name": "Google Cloud",
+      "type": "Service",
+      "color": "purple"
+    },
+    {
+      "name": "Google Colab",
+      "type": "Platform",
+      "color": "gray"
+    },
+    {
+      "name": "Jupyter Notebook",
+      "type": "Platform",
+      "color": "gray"
+    },
+    {
+      "name": "Vs & Vs Code",
+      "type": "Platform",
+      "color": "gray"
     }
   ],
   "projects": [
-    {
-      "id": "project1",
-      "title": "E-commerce Platform",
-      "description": "Developed a full-stack e-commerce platform using Next.js, Node.js, and MongoDB.",
-      "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
-      "details": [
-        "Developed responsive and user-friendly UI with Next.js",
-        "Implemented server-side rendering for better SEO",
-        "Built REST APIs using Node.js and Express",
-        "Integrated MongoDB for storing product, user, and order data",
-        "Added payment gateway integration for seamless checkout"
-      ],
-      "technologies": [
-        {
-          "name": "Next.js",
-          "icon": "fab fa-react"
-        },
-        {
-          "name": "Node.js",
-          "icon": "fab fa-node-js"
-        },
-        {
-          "name": "MongoDB",
-          "icon": "fas fa-database"
-        },
-        {
-          "name": "JavaScript",
-          "icon": "fab fa-js-square"
-        }
-      ],
-      "features": [
-        {
-          "title": "Responsive Design",
-          "description": "Optimized for devices of all sizes.",
-          "icon": "fas fa-mobile-alt"
-        },
-        {
-          "title": "Secure Payment",
-          "description": "Integrated secure payment gateways for seamless checkout.",
-          "icon": "fas fa-lock"
-        },
-        {
-          "title": "SEO Optimized",
-          "description": "Improved search engine ranking with server-side rendering.",
-          "icon": "fas fa-search"
-        }
-      ],
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/yourusername/ecommerce-platform",
-          "icon": "fab fa-github"
-        }
-      ]
-    },
-    {
-      "id": "project2",
-      "title": "AI Chatbot",
-      "description": "Created an AI-powered chatbot using Python and natural language processing techniques.",
-      "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
-      "details": [
-        "Built the chatbot backend using Python",
-        "Utilized natural language processing (NLP) techniques with libraries like spaCy",
-        "Integrated chatbot with messaging platforms such as Telegram",
-        "Added intent recognition and dynamic responses",
-        "Implemented machine learning for improved conversation accuracy"
-      ],
-      "technologies": [
-        {
-          "name": "Python",
-          "icon": "fab fa-python"
-        },
-        {
-          "name": "NLP",
-          "icon": "fas fa-brain"
-        },
-        {
-          "name": "Telegram API",
-          "icon": "fab fa-telegram-plane"
-        }
-      ],
-      "features": [
-        {
-          "title": "AI-Powered",
-          "description": "Dynamic responses based on NLP and ML techniques.",
-          "icon": "fas fa-robot"
-        },
-        {
-          "title": "Multi-Platform",
-          "description": "Seamlessly integrated with various messaging platforms.",
-          "icon": "fas fa-layer-group"
-        },
-        {
-          "title": "Continuous Learning",
-          "description": "Improved performance over time with machine learning.",
-          "icon": "fas fa-sync-alt"
-        }
-      ],
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/yourusername/ai-chatbot",
-          "icon": "fab fa-github"
-        }
-      ]
-    },
-    {
-      "id": "project3",
-      "title": "YouTube Growth",
-      "description": "Grew my YouTube channels to over 10,000 subscribers combined.",
-      "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
-      "details": [
-        "Created engaging tech tutorials for 'NJ as Coder'",
-        "Produced funny and entertaining content for 'Natkhat Jay'",
-        "Optimized videos for YouTube search with proper SEO strategies",
-        "Consistently uploaded videos to build audience engagement",
-        "Interacted with followers to create a strong community"
-      ],
-      "technologies": [
-        {
-          "name": "YouTube Studio",
-          "icon": "fab fa-youtube"
-        },
-        {
-          "name": "Video Editing",
-          "icon": "fas fa-video"
-        },
-        {
-          "name": "SEO",
-          "icon": "fas fa-search"
-        }
-      ],
-      "features": [
-        {
-          "title": "Creative Content",
-          "description": "Produced high-quality and entertaining videos.",
-          "icon": "fas fa-lightbulb"
-        },
-        {
-          "title": "Audience Growth",
-          "description": "Built a strong community of followers.",
-          "icon": "fas fa-users"
-        },
-        {
-          "title": "Monetization",
-          "description": "Generated revenue through ads and sponsorships.",
-          "icon": "fas fa-dollar-sign"
-        }
-      ],
-      "links": [
-        {
-          "name": "YouTube - NJ as Coder",
-          "url": "https://www.youtube.com/c/NJasCoder",
-          "icon": "fab fa-youtube"
-        },
-        {
-          "name": "YouTube - Natkhat Jay",
-          "url": "https://www.youtube.com/c/NatkhatJay",
-          "icon": "fab fa-youtube"
-        }
-      ]
-    },
-    {
-      "id": "project4",
-      "title": "FastAPI Application with PostgreSQL",
-      "description": "Create a Python-based web development project using FastAPI as the server, PostgreSQL as the database, and deployed on Google Cloud.",
-      "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
-      "details": [
-        "Build RESTful API with FastAPI",
-        "Implement data validation using Pydantic",
-        "Set up PostgreSQL database for data persistence",
-        "Deploy the application on Google Cloud Platform",
-        "Implement authentication and authorization",
-        "Create comprehensive API documentation using Swagger UI"
-      ],
-      "technologies": [
-        {
-          "name": "FastAPI",
-          "icon": "fas fa-bolt"
-        },
-        {
-          "name": "PostgreSQL",
-          "icon": "fas fa-database"
-        },
-        {
-          "name": "Python",
-          "icon": "fab fa-python"
-        },
-        {
-          "name": "Google Cloud",
-          "icon": "fab fa-google"
-        },
-        {
-          "name": "Docker",
-          "icon": "fab fa-docker"
-        },
-        {
-          "name": "Git",
-          "icon": "fab fa-git-alt"
-        }
-      ],
-      "features": [
-        {
-          "title": "High Performance",
-          "description": "FastAPI offers very high performance, on par with NodeJS and Go.",
-          "icon": "fas fa-tachometer-alt"
-        },
-        {
-          "title": "Easy to Use",
-          "description": "Designed to be easy to use and learn. Less time reading docs.",
-          "icon": "fas fa-user-friends"
-        },
-        {
-          "title": "Fast to Code",
-          "description": "Increase the speed to develop features by about 200% to 300%.",
-          "icon": "fas fa-code"
-        }
-      ],
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/yourusername/project-repo",
-          "icon": "fab fa-github"
-        },
-        {
-          "name": "YouTube - NJ as Coder",
-          "url": "https://www.youtube.com/c/NJasCoder",
-          "icon": "fab fa-youtube"
-        },
-        {
-          "name": "YouTube - Natkhat Jay",
-          "url": "https://www.youtube.com/c/NatkhatJay",
-          "icon": "fab fa-youtube"
-        }
-      ]
-    }
-  ],
+      {
+        "id": "project1",
+        "title": "Trade Buddy",
+        "description": "Developed a trading platform with paper trading and order management modules using FastAPI and Next.js.",
+        "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
+        "details": [
+          "Developed two modules: Paper Trading System and Order Management System with live market data.",
+          "Built an automated risk management system, improving decision-making accuracy by 70%.",
+          "Implemented user authentication, admin panel, and ticketing system to enhance user experience.",
+          "Deployed Flask and FastAPI-based platforms with Docker on Google Cloud VM.",
+          "Frontend deployed on Vercel ensuring high performance and scalability."
+        ],
+        "technologies": [
+          { "name": "Python", "icon": "fab fa-python" },
+          { "name": "FastAPI", "icon": "fas fa-bolt" },
+          { "name": "Flask", "icon": "fas fa-flask" },
+          { "name": "PostgreSQL", "icon": "fas fa-database" },
+          { "name": "Next.js", "icon": "fab fa-react" },
+          { "name": "Docker", "icon": "fab fa-docker" },
+          { "name": "Google Cloud Platform", "icon": "fab fa-google" }
+        ],
+        "features": [
+          {
+            "title": "Paper Trading System",
+            "description": "Implemented real-time simulations for trading.",
+            "icon": "fas fa-chart-line"
+          },
+          {
+            "title": "Order Management System",
+            "description": "Enhanced live order tracking and risk management.",
+            "icon": "fas fa-tasks"
+          },
+          {
+            "title": "Cloud Deployment",
+            "description": "Deployed on Google Cloud VM with Docker.",
+            "icon": "fas fa-cloud"
+          }
+        ],
+        "links": [
+          {
+            "name": "GitHub",
+            "url": "https://github.com/jay19patel/Trade-Buddy-Broker",
+            "icon": "fab fa-github"
+          },
+          {
+            "name": "Website",
+            "url": "https://algo.natkhatjay.com",
+            "icon": "fas fa-globe"
+          }
+        ]
+      },
+      {
+        "id": "project2",
+        "title": "Image Processing with Automatic Text Overlay",
+        "description": "Designed an image processing tool to detect optimal text placement using OpenCV and Pillow.",
+        "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
+        "details": [
+          "Developed a system to detect optimal text placement on images based on background analysis.",
+          "Utilized OpenCV and Pillow for image analysis, reducing manual text overlay time by 70%.",
+          "Implemented dynamic font size, style, and color selection ensuring text visibility.",
+          "Developed the project in Google Colab for interactive development and fast prototyping."
+        ],
+        "technologies": [
+          { "name": "Python", "icon": "fab fa-python" },
+          { "name": "OpenCV", "icon": "fas fa-brain" },
+          { "name": "Pillow", "icon": "fas fa-image" },
+          { "name": "Google Colab", "icon": "fab fa-google" }
+        ],
+        "features": [
+          {
+            "title": "Text Overlay Automation",
+            "description": "Automated the process of text placement on images.",
+            "icon": "fas fa-font"
+          },
+          {
+            "title": "Dynamic Adjustments",
+            "description": "Dynamic font style, size, and color selection.",
+            "icon": "fas fa-adjust"
+          },
+          {
+            "title": "Prototyping",
+            "description": "Fast prototyping enabled via Google Colab.",
+            "icon": "fas fa-rocket"
+          }
+        ],
+        "links": [
+          {
+            "name": "GitHub",
+            "url": "https://github.com/jay19patel/JETFLIX-MRS-Using-Flask-sk-learn-BS4-Pandas",
+            "icon": "fab fa-github"
+          }
+        ]
+      },
+      {
+        "id": "project3",
+        "title": "Movie Recommendation System",
+        "description": "Built a movie recommendation system using Flask, MongoDB, and data scraping techniques.",
+        "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
+        "details": [
+          "Implemented a recommendation engine using Pandas and Numpy for data pre-processing and analysis.",
+          "Scraped movie data using BeautifulSoup for building a robust database.",
+          "Built the backend with Flask for server-side processing.",
+          "Utilized Jupyter Notebook for prototyping and simple task implementation.",
+          "Designed the frontend with HTML and CSS templates sourced from Google."
+        ],
+        "technologies": [
+          { "name": "Flask", "icon": "fas fa-flask" },
+          { "name": "BeautifulSoup", "icon": "fas fa-code" },
+          { "name": "Pandas", "icon": "fas fa-table" },
+          { "name": "Numpy", "icon": "fas fa-square-root-alt" },
+          { "name": "MongoDB", "icon": "fas fa-database" },
+          { "name": "Jupyter Notebook", "icon": "fas fa-book" },
+          { "name": "HTML & CSS", "icon": "fas fa-laptop-code" }
+        ],
+        "features": [
+          {
+            "title": "Personalized Recommendations",
+            "description": "Provided accurate movie recommendations based on user preferences.",
+            "icon": "fas fa-film"
+          },
+          {
+            "title": "Web Scraping",
+            "description": "Built a robust movie database using scraping techniques.",
+            "icon": "fas fa-database"
+          },
+          {
+            "title": "Interactive Frontend",
+            "description": "Simple and responsive frontend design for user interaction.",
+            "icon": "fas fa-desktop"
+          }
+        ],
+        "links": [
+          {
+            "name": "GitHub",
+            "url": "https://github.com/jay19patel/JETFLIX-MRS-Using-Flask-sk-learn-BS4-Pandas",
+            "icon": "fab fa-github"
+          }
+        ]
+      },
+      {
+        "id": "project4",
+        "title": "Simple E-commerce Website",
+        "description": "Developed a basic e-commerce platform using Django, Jinja, and Bootstrap.",
+        "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
+        "details": [
+          "Created a product listing and checkout system with Django and SQLite database.",
+          "Designed user-friendly interfaces using Bootstrap and Jinja templates.",
+          "Implemented basic cart functionality for user shopping experience.",
+          "Deployed the application locally for testing and further enhancements."
+        ],
+        "technologies": [
+          { "name": "Django", "icon": "fas fa-bolt" },
+          { "name": "Jinja", "icon": "fas fa-code" },
+          { "name": "Bootstrap", "icon": "fab fa-bootstrap" },
+          { "name": "SQLite", "icon": "fas fa-database" },
+          { "name": "HTML & CSS", "icon": "fas fa-laptop-code" }
+        ],
+        "features": [
+          {
+            "title": "Product Listing",
+            "description": "Showcased products with user-friendly navigation.",
+            "icon": "fas fa-list"
+          },
+          {
+            "title": "Shopping Cart",
+            "description": "Implemented basic cart functionality for seamless shopping.",
+            "icon": "fas fa-shopping-cart"
+          },
+          {
+            "title": "Responsive Design",
+            "description": "Ensured the website is mobile-friendly with Bootstrap.",
+            "icon": "fas fa-mobile-alt"
+          }
+        ],
+        "links": [
+          {
+            "name": "GitHub",
+            "url": "https://github.com/jay19patel/Django-simple-Ecommerce",
+            "icon": "fab fa-github"
+          }
+        ]
+      }
+    ]  ,
   "stats": [
     {
       "title": "Live Projects",
       "value": 3,
       "change": 1,
-      "icon": "fas fa-project-diagram"
+      "icon": "fas fa-project-diagram",
+      "url": "#projects"
     },
     {
       "title": "YouTube - NJ as Coder",
-      "value": 5000,
-      "change": 10,
-      "icon": "fab fa-youtube"
+      "value": 26,
+      "change": 3,
+      "icon": "fab fa-youtube",
+      "url": "https://www.youtube.com/@NJasCoder"
     },
     {
       "title": "YouTube - Natkhat Jay",
-      "value": 5500,
-      "change": 15,
-      "icon": "fab fa-youtube"
+      "value": 50,
+      "change": 8,
+      "icon": "fab fa-youtube",
+      "url": "https://www.youtube.com/@natkhat19jay"
     },
     {
       "title": "LinkedIn Connections",
-      "value": 3543,
-      "change": 7,
-      "icon": "fab fa-linkedin-in"
+      "value": 1558,
+      "change": 54,
+      "icon": "fab fa-linkedin-in",
+      "url": "https://www.linkedin.com/in/jayy19patel/"
     },
     {
       "title": "GitHub Repositories",
-      "value": 78,
-      "change": 5,
-      "icon": "fab fa-github"
+      "value": 33,
+      "change": 2,
+      "icon": "fab fa-github",
+      "url": "https://github.com/jay19patel"
     }
   ]
 }

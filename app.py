@@ -42,6 +42,6 @@ def project_detail(project_id):
     return render_template('project_detail.html', project=project)
 
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
 

@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="mt-8">
-                        <a href="/static/resume.pdf" download class="inline-block bg-purple-600 text-white font-bold rounded-lg px-6 py-3 hover:bg-purple-700 transition-colors">
+                        <a href="/static/Jay Patel Software Developer.html" download class="inline-block bg-purple-600 text-white font-bold rounded-lg px-6 py-3 hover:bg-purple-700 transition-colors">
                             Download Resume
                         </a>
                     </div>
@@ -102,16 +102,18 @@
             <h2 class="text-4xl font-bold mb-8 text-center text-purple-200">My Impact</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                 {% for stat in data.stats %}
-                    <div class="bg-gray-100 rounded-lg shadow-md p-4 hover:bg-purple-100 transition-colors">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-medium text-gray-600">{{ stat.title }}</span>
-                            <i class="{{ stat.icon }} text-purple-500"></i>
+                    <a href="{{stat.url}}">
+                        <div class="bg-gray-100 rounded-lg shadow-md p-4 hover:bg-purple-100 transition-colors">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium text-gray-600">{{ stat.title }}</span>
+                                <i class="{{ stat.icon }} text-purple-500"></i>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-800">{{ stat.value }}</div>
+                            <div class="text-sm {% if stat.change > 0 %}text-green-500{% else %}text-red-500{% endif %}">
+                                {% if stat.change > 0 %}+{% endif %}{{ stat.change }}%
+                            </div>
                         </div>
-                        <div class="text-2xl font-bold text-gray-800">{{ stat.value }}</div>
-                        <div class="text-sm {% if stat.change > 0 %}text-green-500{% else %}text-red-500{% endif %}">
-                            {% if stat.change > 0 %}+{% endif %}{{ stat.change }}%
-                        </div>
-                    </div>
+                    </a>
                 {% endfor %}
             </div>
         </div>
