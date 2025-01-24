@@ -1,0 +1,347 @@
+{
+  "interests": [
+    {
+      "name": "Programming",
+      "color": "blue"
+    },
+    {
+      "name": "Gaming",
+      "color": "purple"
+    },
+    {
+      "name": "Traveling",
+      "color": "green"
+    },
+    {
+      "name": "Content Creation",
+      "color": "yellow"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "type": "Language",
+      "color": "green"
+    },
+    {
+      "name": "JavaScript",
+      "type": "Language",
+      "color": "green"
+    },
+    {
+      "name": "FastAPI",
+      "type": "Framework",
+      "color": "yellow"
+    },
+    {
+      "name": "Next.js",
+      "type": "Framework",
+      "color": "yellow"
+    },
+    {
+      "name": "Frappe",
+      "type": "Framework",
+      "color": "yellow"
+    },
+    {
+      "name": "MongoDB",
+      "type": "Database",
+      "color": "blue"
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "Database",
+      "color": "blue"
+    },
+    {
+      "name": "MsSQL",
+      "type": "Database",
+      "color": "blue"
+    },
+    {
+      "name": "Docker",
+      "type": "Tool",
+      "color": "purple"
+    },
+    {
+      "name": "Nginx",
+      "type": "Server",
+      "color": "purple"
+    },
+    {
+      "name": "CloudFlare",
+      "type": "Service",
+      "color": "purple"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project1",
+      "title": "E-commerce Platform",
+      "description": "Developed a full-stack e-commerce platform using Next.js, Node.js, and MongoDB.",
+      "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
+      "details": [
+        "Developed responsive and user-friendly UI with Next.js",
+        "Implemented server-side rendering for better SEO",
+        "Built REST APIs using Node.js and Express",
+        "Integrated MongoDB for storing product, user, and order data",
+        "Added payment gateway integration for seamless checkout"
+      ],
+      "technologies": [
+        {
+          "name": "Next.js",
+          "icon": "fab fa-react"
+        },
+        {
+          "name": "Node.js",
+          "icon": "fab fa-node-js"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "fas fa-database"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "fab fa-js-square"
+        }
+      ],
+      "features": [
+        {
+          "title": "Responsive Design",
+          "description": "Optimized for devices of all sizes.",
+          "icon": "fas fa-mobile-alt"
+        },
+        {
+          "title": "Secure Payment",
+          "description": "Integrated secure payment gateways for seamless checkout.",
+          "icon": "fas fa-lock"
+        },
+        {
+          "title": "SEO Optimized",
+          "description": "Improved search engine ranking with server-side rendering.",
+          "icon": "fas fa-search"
+        }
+      ],
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/yourusername/ecommerce-platform",
+          "icon": "fab fa-github"
+        }
+      ]
+    },
+    {
+      "id": "project2",
+      "title": "AI Chatbot",
+      "description": "Created an AI-powered chatbot using Python and natural language processing techniques.",
+      "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
+      "details": [
+        "Built the chatbot backend using Python",
+        "Utilized natural language processing (NLP) techniques with libraries like spaCy",
+        "Integrated chatbot with messaging platforms such as Telegram",
+        "Added intent recognition and dynamic responses",
+        "Implemented machine learning for improved conversation accuracy"
+      ],
+      "technologies": [
+        {
+          "name": "Python",
+          "icon": "fab fa-python"
+        },
+        {
+          "name": "NLP",
+          "icon": "fas fa-brain"
+        },
+        {
+          "name": "Telegram API",
+          "icon": "fab fa-telegram-plane"
+        }
+      ],
+      "features": [
+        {
+          "title": "AI-Powered",
+          "description": "Dynamic responses based on NLP and ML techniques.",
+          "icon": "fas fa-robot"
+        },
+        {
+          "title": "Multi-Platform",
+          "description": "Seamlessly integrated with various messaging platforms.",
+          "icon": "fas fa-layer-group"
+        },
+        {
+          "title": "Continuous Learning",
+          "description": "Improved performance over time with machine learning.",
+          "icon": "fas fa-sync-alt"
+        }
+      ],
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/yourusername/ai-chatbot",
+          "icon": "fab fa-github"
+        }
+      ]
+    },
+    {
+      "id": "project3",
+      "title": "YouTube Growth",
+      "description": "Grew my YouTube channels to over 10,000 subscribers combined.",
+      "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
+      "details": [
+        "Created engaging tech tutorials for 'NJ as Coder'",
+        "Produced funny and entertaining content for 'Natkhat Jay'",
+        "Optimized videos for YouTube search with proper SEO strategies",
+        "Consistently uploaded videos to build audience engagement",
+        "Interacted with followers to create a strong community"
+      ],
+      "technologies": [
+        {
+          "name": "YouTube Studio",
+          "icon": "fab fa-youtube"
+        },
+        {
+          "name": "Video Editing",
+          "icon": "fas fa-video"
+        },
+        {
+          "name": "SEO",
+          "icon": "fas fa-search"
+        }
+      ],
+      "features": [
+        {
+          "title": "Creative Content",
+          "description": "Produced high-quality and entertaining videos.",
+          "icon": "fas fa-lightbulb"
+        },
+        {
+          "title": "Audience Growth",
+          "description": "Built a strong community of followers.",
+          "icon": "fas fa-users"
+        },
+        {
+          "title": "Monetization",
+          "description": "Generated revenue through ads and sponsorships.",
+          "icon": "fas fa-dollar-sign"
+        }
+      ],
+      "links": [
+        {
+          "name": "YouTube - NJ as Coder",
+          "url": "https://www.youtube.com/c/NJasCoder",
+          "icon": "fab fa-youtube"
+        },
+        {
+          "name": "YouTube - Natkhat Jay",
+          "url": "https://www.youtube.com/c/NatkhatJay",
+          "icon": "fab fa-youtube"
+        }
+      ]
+    },
+    {
+      "id": "project4",
+      "title": "FastAPI Application with PostgreSQL",
+      "description": "Create a Python-based web development project using FastAPI as the server, PostgreSQL as the database, and deployed on Google Cloud.",
+      "image": "https://i.ytimg.com/vi/_ZqAVck-WeM/maxresdefault.jpg",
+      "details": [
+        "Build RESTful API with FastAPI",
+        "Implement data validation using Pydantic",
+        "Set up PostgreSQL database for data persistence",
+        "Deploy the application on Google Cloud Platform",
+        "Implement authentication and authorization",
+        "Create comprehensive API documentation using Swagger UI"
+      ],
+      "technologies": [
+        {
+          "name": "FastAPI",
+          "icon": "fas fa-bolt"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "fas fa-database"
+        },
+        {
+          "name": "Python",
+          "icon": "fab fa-python"
+        },
+        {
+          "name": "Google Cloud",
+          "icon": "fab fa-google"
+        },
+        {
+          "name": "Docker",
+          "icon": "fab fa-docker"
+        },
+        {
+          "name": "Git",
+          "icon": "fab fa-git-alt"
+        }
+      ],
+      "features": [
+        {
+          "title": "High Performance",
+          "description": "FastAPI offers very high performance, on par with NodeJS and Go.",
+          "icon": "fas fa-tachometer-alt"
+        },
+        {
+          "title": "Easy to Use",
+          "description": "Designed to be easy to use and learn. Less time reading docs.",
+          "icon": "fas fa-user-friends"
+        },
+        {
+          "title": "Fast to Code",
+          "description": "Increase the speed to develop features by about 200% to 300%.",
+          "icon": "fas fa-code"
+        }
+      ],
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/yourusername/project-repo",
+          "icon": "fab fa-github"
+        },
+        {
+          "name": "YouTube - NJ as Coder",
+          "url": "https://www.youtube.com/c/NJasCoder",
+          "icon": "fab fa-youtube"
+        },
+        {
+          "name": "YouTube - Natkhat Jay",
+          "url": "https://www.youtube.com/c/NatkhatJay",
+          "icon": "fab fa-youtube"
+        }
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "title": "Live Projects",
+      "value": 3,
+      "change": 1,
+      "icon": "fas fa-project-diagram"
+    },
+    {
+      "title": "YouTube - NJ as Coder",
+      "value": 5000,
+      "change": 10,
+      "icon": "fab fa-youtube"
+    },
+    {
+      "title": "YouTube - Natkhat Jay",
+      "value": 5500,
+      "change": 15,
+      "icon": "fab fa-youtube"
+    },
+    {
+      "title": "LinkedIn Connections",
+      "value": 3543,
+      "change": 7,
+      "icon": "fab fa-linkedin-in"
+    },
+    {
+      "title": "GitHub Repositories",
+      "value": 78,
+      "change": 5,
+      "icon": "fab fa-github"
+    }
+  ]
+}
